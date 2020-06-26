@@ -1,4 +1,8 @@
 # recipe-box
+### Landing page
+![Screenshot from 2020-06-26 17-35-55](https://user-images.githubusercontent.com/30442301/85875718-f2a3eb00-b7d4-11ea-8216-dd44d717ae7e.png)
+### Add recipe
+![Screenshot from 2020-06-26 17-36-26](https://user-images.githubusercontent.com/30442301/85875730-f8013580-b7d4-11ea-81aa-24fa8bdb9a1f.png)
 
 ## Available Scripts
 
