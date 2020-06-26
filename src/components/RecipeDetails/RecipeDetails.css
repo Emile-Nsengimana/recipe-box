@@ -1,0 +1,17 @@
+.recipe-details {
+  flex: 8;
+  text-align: center;
+  height: 80vh;
+  overflow: auto;
+}
+
+.recipe-details li {
+  list-style: square;
+  text-align: left;
+  margin: 10px 40px;
+}
+
+.recipe-box {
+  width: 80%;
+  margin: auto;
+}
