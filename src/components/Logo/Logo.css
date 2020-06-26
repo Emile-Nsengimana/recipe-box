@@ -1,0 +1,9 @@
+.logo {
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 7px;
+}
+
+.logo img {
+  height: 100%;
+}

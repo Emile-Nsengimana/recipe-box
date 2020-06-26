@@ -1,0 +1,13 @@
+.navbar {
+  min-height: 90px;
+  grid-auto-flow: column;
+  background-color: #fff;
+  grid-gap: 20px;
+  padding: 0 70px;
+  box-shadow: 0 5px 10px -10px;
+  color: #020a0c;
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  height: 90px;
+}

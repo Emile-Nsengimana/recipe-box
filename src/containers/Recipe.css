@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.content {
+  display: flex;
+}
+
+.txt-input {
+  margin: 7px;
+}
