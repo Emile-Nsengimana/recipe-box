@@ -11,7 +11,9 @@ const RecipeList = (props) => {
   return (
     <>
       <div className="side-drawer">
-        <button className="btn">Add recipe</button>
+        <button className="btn" onClick={props.addRecipe}>
+          Add recipe
+        </button>
 
         <hr />
         <ul className="recipe-list">{recipes}</ul>
