@@ -3,7 +3,7 @@ import "./RecipeList.css";
 
 const RecipeList = (props) => {
   const recipes = props.recipes.map((rec) => (
-    <li key={rec.name} onClick={() => props.viewRecipe(rec.name)}>
+    <li key={rec.name}>
       {rec.name}
     </li>
   ));
@@ -11,7 +11,7 @@ const RecipeList = (props) => {
   return (
     <>
       <div className="side-drawer">
-        <button className="btn" onClick={props.addRecipe}>
+        <button className="btn">
           Add recipe
         </button>
 
