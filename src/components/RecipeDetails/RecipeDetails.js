@@ -1,7 +1,7 @@
 import React from "react";
 import "./RecipeDetails.css";
 
-const RecipeDetails = (props) => {
+const RecipeDetails = props => {
   return (
     <div className="recipe-details">
       {props.recipe ? (
@@ -16,6 +16,7 @@ const RecipeDetails = (props) => {
           ))}
           <button
             className="btn btn-danger"
+            onClick={() => props.removeRecipe(props.recipe.name)}
           >
             Delete
           </button>

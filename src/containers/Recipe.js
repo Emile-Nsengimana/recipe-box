@@ -14,13 +14,22 @@ const Recipe = () => {
     const _recipe = recipe.filter((rec) => rec.name === name);
     setActiveRecipe(..._recipe);
   };
+
+  const handleRemoveRecipe = (name) => {
+    const recipeIndex = recipe.findIndex((rec) => rec.name === name);
+    recipe.splice(recipeIndex, 1);
+    if (recipe) setActiveRecipe(recipe[0]);
+  };
   
   return (
     <div>
       <NavBar />
       <div className="content">
         <RecipeList viewRecipe={handleChangeActiveRecipe} recipes={recipe} />
-        <RecipeDetails recipe={activeRecipe} />
+        <RecipeDetails
+          removeRecipe={handleRemoveRecipe}
+          recipe={activeRecipe}
+        />
       </div>
     </div>
   );
