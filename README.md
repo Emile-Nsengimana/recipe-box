@@ -12,7 +12,7 @@ First clone it to your machine:
 https://github.com/Emile-Nsengimana/recipe-box.git
 ```
 Open it using your favorite IDE
-I used ([vs code](https://code.visualstudio.com/download))
+I recommend [vs code](https://code.visualstudio.com/download)
 
 Install all necessary node modules
 ```
