@@ -2,8 +2,14 @@ import React from "react";
 import "./RecipeList.css";
 
 const RecipeList = (props) => {
-  const recipes = props.recipes.map((rec) => (
-    <li key={rec.name}>
+  const { recipes } = props;
+  const recipeList = recipes.map((rec) => (
+    <li
+      key={rec.name}
+      onClick={() => {
+        props.viewRecipe(rec.name);
+      }}
+    >
       {rec.name}
     </li>
   ));
@@ -11,12 +17,12 @@ const RecipeList = (props) => {
   return (
     <>
       <div className="side-drawer">
-        <button className="btn">
+        <button className="btn" onClick={props.addRecipe}>
           Add recipe
         </button>
 
         <hr />
-        <ul className="recipe-list">{recipes}</ul>
+        <ul className="recipe-list">{recipeList}</ul>
       </div>
     </>
   );

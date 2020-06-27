@@ -8,9 +8,11 @@ import AddRecipeForm from "../components/Form/AddRecipeForm";
 import { recipes } from "../data/dummy-data";
 
 const Recipe = () => {
-  const savedRecipe = JSON.parse(window.localStorage.getItem('saved-recipes'));
+  const savedRecipe = JSON.parse(window.localStorage.getItem("saved-recipes"));
 
-  const [recipe, setRecipe] = useState(recipes.concat(savedRecipe));
+  const [recipe, setRecipe] = useState(
+    savedRecipe !== null ? recipes.concat(savedRecipe) : recipes
+  );
   const [activeRecipe, setActiveRecipe] = useState(recipe[0]);
   const [addRecipe, setAddRecipe] = useState(false);
 
@@ -104,9 +106,8 @@ const Recipe = () => {
   };
 
   useEffect(() => {
-    const addedRecipes = recipe.filter(rec => recipes.indexOf(rec) === -1);
-    window.localStorage.setItem('saved-recipes', JSON.stringify(addedRecipes));
-
+    const addedRecipes = recipe.filter((rec) => recipes.indexOf(rec) === -1);
+    window.localStorage.setItem("saved-recipes", JSON.stringify(addedRecipes));
   }, [recipe]);
 
   return (
