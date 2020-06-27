@@ -1,27 +1,28 @@
 # recipe-box
-### Landing page
-![Screenshot from 2020-06-26 17-35-55](https://user-images.githubusercontent.com/30442301/85875718-f2a3eb00-b7d4-11ea-8216-dd44d717ae7e.png)
-### Add recipe
-![Screenshot from 2020-06-26 17-36-26](https://user-images.githubusercontent.com/30442301/85875730-f8013580-b7d4-11ea-81aa-24fa8bdb9a1f.png)
+[click here to check it out](http://Emile-Nsengimana.github.io/recipe-box)
 
-## Available Scripts
+### Requirements
+- `Nodejs` - a JavaScript run-time environment that executes JavaScript code outside of a browser
+- `Yarn` - a package manager for the JavaScript programming language
+- `Git` - version-control system for tracking changes in source code during software development
 
-In the project directory, you can run:
+### SETUP
+First clone it to your machine:
+```
+https://github.com/Emile-Nsengimana/recipe-box.git
+```
+Open it using your favorite IDE
+I used ([vs code](https://code.visualstudio.com/download))
 
-### `yarn start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Install all necessary node modules
+```
+yarn install
+```
+To start the app
+```
+yarn start
+```
+To run tests
+```
+yarn test
+```
