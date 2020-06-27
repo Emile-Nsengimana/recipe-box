@@ -2,16 +2,17 @@ import React from "react";
 import "./RecipeList.css";
 
 const RecipeList = (props) => {
-  let recipes = null;
-  if (props.recipes) {
-    recipes = props.recipes.map((rec) => (
-      <ul>
-        <li key={rec.name} onClick={() => props.viewRecipe(rec.name)}>
-          {rec.name}
-        </li>
-      </ul>
-    ));
-  }
+  const { recipes } = props;
+  const recipeList = recipes.map((rec) => (
+    <li
+      key={rec.name}
+      onClick={() => {
+        props.viewRecipe(rec.name);
+      }}
+    >
+      {rec.name}
+    </li>
+  ));
 
   return (
     <>
@@ -21,7 +22,7 @@ const RecipeList = (props) => {
         </button>
 
         <hr />
-        <ul className="recipe-list">{recipes}</ul>
+        <ul className="recipe-list">{recipeList}</ul>
       </div>
     </>
   );
