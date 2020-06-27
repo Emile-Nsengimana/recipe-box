@@ -1,5 +1,5 @@
 # recipe-box
-[click here to check it out](http://Emile-Nsengimana.github.io/recipe-box)
+[Click here to check it out](http://Emile-Nsengimana.github.io/recipe-box)
 
 ### Requirements
 - `Nodejs` - a JavaScript run-time environment that executes JavaScript code outside of a browser
